@@ -43,15 +43,15 @@
 }
 
 .navbar {
-    background-color: #000; /* Black background color */
+    background-color: #000; 
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    color: #fff; /* Text color */
+    color: #fff; 
     width: 100%;
 }
 
-/* Style for the dropdown button */
+
 .dropbtn {
     background-color: inherit;
     color: #fff;
@@ -61,7 +61,7 @@
     font-size: 16px;
 }
 
-/* Style for the dropdown content */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -71,7 +71,7 @@
     z-index: 1;
 }
 
-/* Style for dropdown links */
+
 .dropdown-content a {
     color: #fff;
     padding: 12px 16px;
@@ -79,25 +79,285 @@
     display: block;
 }
 
-/* Change color on hover */
+
 .dropdown-content a:hover {
-    background-color: #333; /* Darker background color on hover */
+    background-color: #333;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Style for the "Special Offers" button */
+
 .special-offers {
     background-color: inherit;
     color: #fff;
     padding: 10px 20px;
 }
 
-/* Style for links in the "Special Offers" button */
 .special-offers a {
     color: #fff;
     text-decoration: none;
 }
+
+
+  .hero {
+    background-image: url('../Images/abd_hero_banner_alaska_moose.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    padding: 80px 0; 
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.dropdown-hero {
+    display: inline-block;
+    margin: 10px;
+}
+
+.dropdown-hero select {
+    width: 200px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.find-trips-button {
+    background-color: #04809c; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-direction: row;
+    max-width: 800px;
+}
+
+
+.card-content {
+    flex: 1; 
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 30%;
+}
+
+
+.card-image {
+    flex: 1; 
+
+}
+
+.card-image img {
+    width: 100%;
+    display: block;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #04809c; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.carousel-container {
+    width: 100%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%; 
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.carousel-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.guest-stories {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.guest-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.guest-card {
+    width: 300px; 
+    border: 1px solid #ccc; 
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s; 
+}
+
+
+.guest-card-image {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s; 
+}
+
+
+.guest-card-text {
+    margin-top: 10px;
+}
+
+.guest-card:hover {
+    transform: scale(1.05); 
+}
+
+.guest-card:hover .guest-card-image {
+    transform: scale(1.1); 
+}
+
+.links-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 50px;
+}
+
+
+.link-column {
+    width: 16.66%; 
+    padding: 10px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+
+.link-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.link-column a {
+    display: block; 
+    margin-bottom: 5px; 
+    text-decoration: none;
+    color: #333; 
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.link-column a:hover {
+    color: #007bff; 
+}
+
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+}
+
+
+.disney-logo {
+    width: 50px; 
+    margin-top: 10px; 
+}
+
+
+.footer-links {
+    margin-top: 20px; 
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff; 
+    margin: 0 10px;
+}
+
+
+.copyright {
+    margin-top: 20px; 
+    font-size: 14px; 
+}
+

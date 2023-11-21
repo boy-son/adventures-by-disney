@@ -146,7 +146,7 @@
             </div>
         </div>
 
-
+        <div class="card-container">
         <div class="card">
             <div class="card-image">
                 <img src="Images/last-chance-offer-abd-aem2-16x9.jpg" alt="Card Image" width="100%">
@@ -168,6 +168,7 @@
             <img src="Images/AdobeStock_320895503-3x2.jpg.adapt.six-sixty-seven.jpg" alt="Card Image" width="100%">
           </div>
         </div>
+        </div>
 
         <div class="carousel-heading">
           <h3>Featured Trips For You</h3>
@@ -176,55 +177,56 @@
 
         <div class="carousel-container">
           <div class="carousel">
+            <div class="carousel-arrow prev-arrow" onclick="prevSlide()">&#8249;</div>
               <div class="carousel-item">
                   <div class="carousel-destination">
-                      <img src="Images/south-africa.jpg" alt="South Africa">
+                      <img src="Images/south-africa.jpg" alt="South Africa" class="carousel-image">
                       <p>South Africa</p>
                       <p>10 Days / 9 Nights</p>
                   </div>
               </div>
               <div class="carousel-item">
                   <div class="carousel-destination">
-                      <img src="Images/new-zealand.jpg" alt="New Zealand">
+                      <img src="Images/new-zealand.jpg" alt="New Zealand" class="carousel-image">
                       <p>New Zealand</p>
                       <p>12 Days/ 11 Nights</p>
                   </div>
               </div>
               <div class="carousel-item">
                   <div class="carousel-destination">
-                      <img src="Images/nova-scotia.jpg" alt="Nova Scotia">
+                      <img src="Images/nova-scotia.jpg" alt="Nova Scotia" class="carousel-image">
                       <p>Nova Scotia & Prince Edward Island</p>
                       <p>8 Days / 7 Nights</p>
                   </div>
+              </div>
                   <div class="carousel-item">
                     <div class="carousel-destination">
-                        <img src="Images/danube.jpg" alt="Danube">
+                        <img src="Images/danube.jpg" alt="Danube" class="carousel-image">
                         <p>Danube River Cruise</p>
                         <p>8 Days/ 7 Nights</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                   <div class="carousel-destination">
-                      <img src="Images/galapagos.jpg" alt="Galapagos">
+                      <img src="Images/galapagos.jpg" alt="Galapagos" class="carousel-image">
                       <p>Galapagos Islands Expedition Cruise </p>
                       <p>9 Days/ 8 Nights</p>
                   </div>
               </div>
               <div class="carousel-item">
                 <div class="carousel-destination">
-                    <img src="Images/columbia.jpg" alt="Columbia">
+                    <img src="Images/columbia.jpg" alt="Columbia" class="carousel-image">
                     <p>Columbia</p>
                     <p>8 Days/ 7 Nights</p>
                 </div>
             </div>
-
+          
           </div>
-          <div class="carousel-arrow prev-arrow" onclick="prevSlide()">&#8249;</div>
           <div class="carousel-arrow next-arrow" onclick="nextSlide()">&#8250;</div>
       </div>
         
         <div class="guest-stories">
-          <div class="card-container">
+          <div class="guest-card-container">
        
             <div class="guest-card">
               <img src="Images/disneylandResortSouthernCalifornia-Testimonial-3x2.jpg.adapt.six-sixty-seven.jpg" alt="Disneyland and Southern California" class="guest-card-image">
@@ -319,7 +321,7 @@
           </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <img src="Images/disney-logo.png" alt="Disney Logo" class="disney-logo">
       
         <div class="footer-links">
@@ -337,5 +339,7 @@
         </div>
 
     </footer>
+
+    <script src="JS/home.js"></script>
 </body>
 </html>
